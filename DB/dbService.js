@@ -6,7 +6,10 @@ const ENVIROMENT = process.env.ENVIROMENT;
 const DB = process.env.DB;
 
 const connectToDB = async () => {
-  if (DB === "mongodb") {
+  console.log(ENVIROMENT);
+
+  
+  if (DB === "MONGODB") {
     if (ENVIROMENT === "development") {
       await connectToLocalDB();
     }
