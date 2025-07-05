@@ -84,10 +84,10 @@ router.get("/:id", async (req, res) => {
 });
 
 // update card
+
 router.put("/:id", auth, async (req, res) => {
   try {
     const { id } = req.params;
-
     let userInfo = req.user;
     const originalCardFromDB = await getCard(id);
     if (!userInfo.isAdmin && userInfo._id != originalCardFromDB.user_id) {
@@ -104,6 +104,34 @@ router.put("/:id", auth, async (req, res) => {
       return createError("Validation", validationErrorMessage, 400);
     }
 
+    if (
+      req.body.bizNumber !== originalCardFromDB.bizNumber &&
+      !userInfo.isAdmin
+    ) {
+      return createError(
+        "Authorization",
+        "Only admin user can change bizNumber"
+      );
+    }
+
+    if (
+      userInfo.isAdmin &&
+      req.body.bizNumber &&
+      req.body.bizNumber !== originalCardFromDB.bizNumber
+) {
+      const cardWithSameBizNumber = await Card.findOne({
+        bizNumber: req.body.bizNumber,
+      });
+
+      if (cardWithSameBizNumber) {
+        return createError(
+          "Validation",
+          "The new bizNumber is already exist by another card",
+          400
+        );
+      }
+    }
+
     let normalizedUpdateCard = await normalizeCard(req.body, userInfo._id);
     let card = await updateCard(id, normalizedUpdateCard);
     res.status(201).send(card);
@@ -111,6 +139,8 @@ router.put("/:id", auth, async (req, res) => {
     return handleError(res, error.status, error.message);
   }
 });
+
+ 
 
 // delete card
 router.delete("/:id", auth, async (req, res) => {
@@ -126,13 +156,14 @@ router.delete("/:id", auth, async (req, res) => {
         403
       );
     }
-
-    let card = await deleteCard(id);
+let card = await deleteCard(id);
     res.status(200).send(card);
   } catch (error) {
     return handleError(res, error.status, error.message);
   }
 });
+
+
 
 // like card
 router.patch("/:id", auth, async (req, res) => {

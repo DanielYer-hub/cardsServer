@@ -44,10 +44,26 @@ const loginUser = async (email, password) => {
       return createError("Authentication", "User not exist");
     }
 
+    if( userFromDB.lockUntil && userFromDB.lockUntil > Date.now()){
+      return createError("Authentication", "User is locked. Try again later", 403 );
+    }
+
     if (!comparePassword(password, userFromDB.password)) {
+      const attempts = (userFromDB.loginAttempts || 0) + 1;
+      userFromDB.loginAttempts = attempts;
+
+      if (attempts >= 3) {
+        userFromDB.lockUntil = new Date(Date.now() + 24 * 60 *60 * 1000); // Lock for 24 hours
+      }
+      await userFromDB.save();
       return createError("Authentication", "Invalid email or password");
     }
 
+    userFromDB.loginAttempts = 0; // Reset login attempts on successful login
+    userFromDB.lockUntil = undefined; // Reset lock until on successful login
+    await userFromDB.save();
+
+    // Generate auth token
     const token = generateAuthToken(userFromDB);
     return token;
   } catch (error) {

@@ -6,7 +6,7 @@ const ENVIROMENT = process.env.ENVIROMENT;
 const DB = process.env.DB;
 
 const connectToDB = async () => {
-  console.log(ENVIROMENT);
+  
 
   
   if (DB === "MONGODB") {

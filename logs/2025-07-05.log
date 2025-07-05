@@ -1,0 +1,1 @@
+[2025/07/05 14:45:55] POST /users 400  -  68.268 ms | Mongoos Error: user validation failed: image.alt: Path `alt` (``) is shorter than the minimum allowed length (2).
