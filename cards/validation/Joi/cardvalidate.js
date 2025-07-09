@@ -49,4 +49,5 @@ const cardValidate = (card) => {
   return schema.validate(card, { abortEarly: false });
 };
 
+
 module.exports = cardValidate;
