@@ -1,4 +1,4 @@
-const morganLogger = require("./morgan/morganLogger");
+const morganLogger = require("./morgan/morganlogger");
 require("dotenv").config();
 
 const logger = process.env.LOGGER;
