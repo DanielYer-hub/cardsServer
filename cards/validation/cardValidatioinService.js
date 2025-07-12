@@ -1,4 +1,4 @@
-const cardValidate = require("./Joi/cardValidate");
+const cardValidate = require("./Joi/cardvalidate");
 require("dotenv").config();
 
 
