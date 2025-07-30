@@ -1,0 +1,29 @@
+[2025/07/23 19:14:36] PUT /cards/687fce7a467ecce715626be2 400  -  6.708 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 19:36:03] PUT /cards/687fce7a467ecce715626be2 400  -  5.815 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 19:37:44] PUT /cards/687fce7a467ecce715626be2 400  -  3.756 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 19:40:26] PUT /cards/687fce7a467ecce715626be2 400  -  3.856 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 19:40:37] PUT /cards/687fce7a467ecce715626be2 400  -  3.392 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 19:44:00] PUT /cards/687fce7a467ecce715626be2 400  -  4.220 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 19:46:28] PUT /cards/687fce7a467ecce715626be2 400  -  4.929 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 19:58:33] PUT /cards/687fce7a467ecce715626be2 400  -  20.600 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 20:15:05] PUT /cards/6881158f89c70616e395b60f 400  -  10.919 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 20:18:05] PUT /cards/6881158f89c70616e395b60f 400  -  7.056 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 20:21:46] PUT /cards/6881158f89c70616e395b60f 400  -  4.117 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 20:23:52] PUT /cards/6881158f89c70616e395b60f 400  -  19.508 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 20:24:02] PUT /cards/6881158f89c70616e395b60f 400  -  4.256 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 21:00:19] PUT /cards/6881158f89c70616e395b60f 400  -  20.678 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 21:01:37] PUT /cards/6881158f89c70616e395b60f 401  -  0.570 ms | Authentication Error: Please login
+[2025/07/23 21:01:53] PUT /cards/6881158f89c70616e395b60f 401  -  0.471 ms | Authentication Error: Please login
+[2025/07/23 21:02:04] PUT /cards/6881158f89c70616e395b60f 400  -  5.866 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 22:21:10] PUT /cards/6881158f89c70616e395b60f 400  -  5.555 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 22:38:29] PUT /cards/6881158f89c70616e395b60f 400  -  16.466 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 22:43:40] PUT /cards/6881158f89c70616e395b60f 400  -  16.675 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 22:44:39] PUT /cards/6881158f89c70616e395b60f 400  -  6.955 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 22:45:30] PUT /cards/6881158f89c70616e395b60f 400  -  5.989 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 22:49:16] PUT /cards/6881158f89c70616e395b60f 400  -  20.781 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 22:52:45] PUT /cards/cards/6881158f89c70616e395b60f 404  -  0.923 ms | Path not found
+[2025/07/23 22:53:23] PUT /cards/edit-card/6881158f89c70616e395b60f 404  -  0.454 ms | Path not found
+[2025/07/23 22:53:39] PUT /cards/6881158f89c70616e395b60f 400  -  15.181 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 22:54:07] PUT /cards/6881158f89c70616e395b60f 400  -  6.103 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 22:54:32] PUT /cards/6881158f89c70616e395b60f 400  -  6.580 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/23 22:55:25] PUT /cards/6881158f89c70616e395b60f 400  -  2.948 ms | Authorization Error: Only admin user can change bizNumber

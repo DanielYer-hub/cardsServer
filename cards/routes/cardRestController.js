@@ -54,7 +54,6 @@ router.get("/", async (req, res) => {
 // Get my card
 router.get("/my-cards", auth, async (req, res) => {
   try {
-    // const { id } = req.body;
     const userInfo = req.user;
 
     if (!userInfo.isBusiness) {
@@ -84,7 +83,6 @@ router.get("/:id", async (req, res) => {
 });
 
 // update card
-
 router.put("/:id", auth, async (req, res) => {
   try {
     const { id } = req.params;
@@ -97,23 +95,20 @@ router.put("/:id", auth, async (req, res) => {
         403
       );
     }
-
     const validationErrorMessage = cardValidation(req.body);
     if (validationErrorMessage != "") {
       console.log(validationErrorMessage);
       return createError("Validation", validationErrorMessage, 400);
     }
-
     if (
       req.body.bizNumber !== originalCardFromDB.bizNumber &&
-      !userInfo.isAdmin
+      !userInfo
     ) {
       return createError(
         "Authorization",
         "Only admin user can change bizNumber"
       );
     }
-
     if (
       userInfo.isAdmin &&
       req.body.bizNumber &&
@@ -131,7 +126,6 @@ router.put("/:id", auth, async (req, res) => {
         );
       }
     }
-
     let normalizedUpdateCard = await normalizeCard(req.body, userInfo._id);
     let card = await updateCard(id, normalizedUpdateCard);
     res.status(201).send(card);
@@ -139,8 +133,6 @@ router.put("/:id", auth, async (req, res) => {
     return handleError(res, error.status, error.message);
   }
 });
-
- 
 
 // delete card
 router.delete("/:id", auth, async (req, res) => {
@@ -162,8 +154,6 @@ let card = await deleteCard(id);
     return handleError(res, error.status, error.message);
   }
 });
-
-
 
 // like card
 router.patch("/:id", auth, async (req, res) => {

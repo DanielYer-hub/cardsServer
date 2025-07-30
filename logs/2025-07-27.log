@@ -1,0 +1,5 @@
+[2025/07/27 21:45:27] PUT /cards/6884d2026cab328e25b0fbe7 400  -  7.226 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/27 21:51:26] PUT /cards/6884d2026cab328e25b0fbe7 400  -  13.923 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/27 21:53:23] POST /users/login 400  -  130.287 ms | Authentication Error: Invalid email or password
+[2025/07/27 21:53:35] POST /users/login 400  -  74.118 ms | Authentication Error: Invalid email or password
+[2025/07/27 21:58:25] POST /users/login 400  -  2.402 ms | Validation Error: Password must contain at least 7 charecters and contain a uppercase letter, a lowercase letter, a number and special charecter

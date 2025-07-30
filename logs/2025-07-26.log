@@ -1,0 +1,28 @@
+[2025/07/26 13:39:59] PUT /cards/6881158f89c70616e395b60f 400  -  6.647 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 13:53:02] PUT /cards/6881158f89c70616e395b60f 400  -  5.415 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 14:01:02] PUT /cards/6881158f89c70616e395b60f 400  -  8.165 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 14:01:17] PUT /cards/6881158f89c70616e395b60f 400  -  4.060 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 14:01:27] PUT /cards/6881158f89c70616e395b60f 400  -  3.796 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 14:02:14] PUT /cards/6881158f89c70616e395b60f 400  -  4.029 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 14:21:22] PUT /cards/6881158f89c70616e395b60f 400  -  3.390 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 14:30:41] POST /cards 400  -  10.562 ms | Mongoose Error: E11000 duplicate key error collection: cardsServer.cards index: email_1 dup key: { email: "komrad.erema@yandex.com" }
+[2025/07/26 14:31:24] POST /cards 400  -  6.379 ms | Mongoose Error: E11000 duplicate key error collection: cardsServer.cards index: email_1 dup key: { email: "komrad.erema@yandex.com" }
+[2025/07/26 14:56:14] DELETE /cards/6884c2186cab328e25b0fa3b 500  -  3.493 ms | Internal Server Error
+[2025/07/26 14:57:28] DELETE /cards/6884c2186cab328e25b0fa3b 500  -  5.722 ms | Internal Server Error
+[2025/07/26 14:58:21] DELETE /cards/6884c2d96cab328e25b0fa4b 500  -  4.020 ms | Internal Server Error
+[2025/07/26 15:07:29] POST /cards 400  -  4.669 ms | Mongoose Error: E11000 duplicate key error collection: cardsServer.cards index: email_1 dup key: { email: "komrad.erema@yandex.com" }
+[2025/07/26 15:08:12] POST /cards 400  -  5.052 ms | Mongoose Error: E11000 duplicate key error collection: cardsServer.cards index: email_1 dup key: { email: "komrad.erema@yandex.com" }
+[2025/07/26 15:10:11] POST /cards 400  -  6.276 ms | Mongoose Error: E11000 duplicate key error collection: cardsServer.cards index: email_1 dup key: { email: "komrad.erema@yandex.com" }
+[2025/07/26 15:10:31] POST /cards 400  -  6.147 ms | Mongoose Error: E11000 duplicate key error collection: cardsServer.cards index: email_1 dup key: { email: "komrad.erema@yandex.com" }
+[2025/07/26 15:11:39] POST /cards 400  -  7.192 ms | Mongoose Error: E11000 duplicate key error collection: cardsServer.cards index: email_1 dup key: { email: "komrad.erema@yandex.com" }
+[2025/07/26 15:30:46] POST /cards 400  -  4.834 ms | Mongoose Error: E11000 duplicate key error collection: cardsServer.cards index: email_1 dup key: { email: "komrad.erema@yandex.com" }
+[2025/07/26 15:32:06] POST /cards 400  -  2.203 ms | Validation Error: Phone must be a valid israeli phone number
+[2025/07/26 15:34:08] PUT /cards/6884cafa6cab328e25b0fb1f 400  -  7.685 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 16:03:32] PUT /cards/6884d2026cab328e25b0fbe7 400  -  2.811 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 16:24:50] PUT /cards/6884d2026cab328e25b0fbe7 400  -  3.726 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 16:29:58] POST /cards 400  -  5.633 ms | Mongoose Error: E11000 duplicate key error collection: cardsServer.cards index: email_1 dup key: { email: "komrad.erema@yandex.com" }
+[2025/07/26 16:35:12] PUT /cards/6884d2026cab328e25b0fbe7 400  -  3.785 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 21:09:57] PUT /cards/6884d2026cab328e25b0fbe7 400  -  4.348 ms | Validation Error: "bizNumber" must be greater than or equal to 1000000,"likes" is not allowed,"_id" is not allowed,"user_id" is not allowed
+[2025/07/26 21:20:04] PUT /cards/6884d2026cab328e25b0fbe7 400  -  4.802 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 21:21:11] PUT /cards/6884d2026cab328e25b0fbe7 400  -  4.573 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/26 21:33:49] PUT /cards/6884d2026cab328e25b0fbe7 400  -  4.579 ms | Authorization Error: Only admin user can change bizNumber

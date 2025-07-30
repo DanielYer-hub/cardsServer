@@ -1,7 +1,6 @@
 const cardValidate = require("./Joi/cardvalidate");
 require("dotenv").config();
 
-
 const validator = process.env.VALIDATOR;
 
 const cardValidation = (card) => {

@@ -1,0 +1,7 @@
+[2025/07/22 20:02:34] POST /users 400  -  71.775 ms | Mongoos Error: user validation failed: image.alt: Path `alt` (``) is shorter than the minimum allowed length (2).
+[2025/07/22 20:09:00] GET /users/users/687fc59a467ecce715626bbf 404  -  0.632 ms | Path not found
+[2025/07/22 20:38:12] POST /users/login 400  -  159.814 ms | Authentication Error: Invalid email or password
+[2025/07/22 20:41:28] GET /687fc59a467ecce715626bbf 404  -  0.440 ms | Path not found
+[2025/07/22 20:42:00] POST /users/login 400  -  63.524 ms | Authentication Error: Invalid email or password
+[2025/07/22 20:46:49] PUT /cards/687fce7a467ecce715626be2 400  -  8.136 ms | Authorization Error: Only admin user can change bizNumber
+[2025/07/22 20:49:26] PUT /cards/687fce7a467ecce715626be2 400  -  5.990 ms | Authorization Error: Only admin user can change bizNumber
